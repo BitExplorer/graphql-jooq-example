@@ -1,0 +1,14 @@
+schema {
+  query: Query
+}
+
+type Query {
+  getGoods(
+    id: Int
+  ): Goods!
+}
+
+type Goods {
+  id: Int
+  name: String
+}

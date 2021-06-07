@@ -6,9 +6,9 @@ spring:
     password: zigzag
   jooq:
     sql-dialect: mysql
-  sql:
-    init:
-      enabled: true
+#  sql:
+#    init:
+#      enabled: true
 
 
 graphql:
