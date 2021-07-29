@@ -29,8 +29,10 @@ dependencies {
   runtimeOnly("com.graphql-java-kickstart:graphiql-spring-boot-starter:11.0.0")
   runtimeOnly("com.graphql-java-kickstart:voyager-spring-boot-starter:11.0.0")
   runtimeOnly("com.graphql-java-kickstart:playground-spring-boot-starter:11.0.0")
-  runtimeOnly("mysql:mysql-connector-java")
-  jooqGenerator("mysql:mysql-connector-java:6.0.3")
+  //runtimeOnly("mysql:mysql-connector-java")
+  runtimeOnly("org.postgresql:postgresql:42.2.14")
+  //jooqGenerator("mysql:mysql-connector-java:6.0.3")
+  jooqGenerator("org.postgresql:postgresql:42.2.14")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
@@ -56,17 +58,17 @@ jooq {
       jooqConfiguration.apply {
         logging = org.jooq.meta.jaxb.Logging.WARN
         jdbc.apply {
-          driver = "com.mysql.cj.jdbc.Driver"
-          url = "jdbc:mysql://localhost:3306/jooq_example?serverTimezone=UTC&characterEncoding=UTF-8&useSSL=false"
-          user = "root"
-          password = "zigzag"
+          driver = "org.postgresql.Driver"
+          url = "jdbc:postgresql://localhost:5432/finance_db"
+          user = "henninb"
+          password = "monday1"
         }
         generator.apply {
           name = "org.jooq.codegen.DefaultGenerator"
 
           database.apply {
-            name = "org.jooq.meta.mysql.MySQLDatabase"
-            inputSchema = "jooq_example"
+            name = "org.jooq.meta.postgres.PostgresDatabase"
+            inputSchema = "public"
             includes = "goods"
             excludes = ""
           }
