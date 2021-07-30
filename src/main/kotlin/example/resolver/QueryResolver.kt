@@ -1,8 +1,8 @@
-package me.jjeda.graphqljooqexample.resolver
+package example.resolver
 
 import graphql.kickstart.tools.GraphQLQueryResolver
-import me.jjeda.graphqljooqexample.domain.Goods
-import me.jjeda.graphqljooqexample.service.GoodsService
+import example.domain.Goods
+import example.service.GoodsService
 import org.springframework.stereotype.Component
 
 @Component

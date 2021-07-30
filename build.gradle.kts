@@ -29,9 +29,7 @@ dependencies {
   runtimeOnly("com.graphql-java-kickstart:graphiql-spring-boot-starter:11.0.0")
   runtimeOnly("com.graphql-java-kickstart:voyager-spring-boot-starter:11.0.0")
   runtimeOnly("com.graphql-java-kickstart:playground-spring-boot-starter:11.0.0")
-  //runtimeOnly("mysql:mysql-connector-java")
   runtimeOnly("org.postgresql:postgresql:42.2.14")
-  //jooqGenerator("mysql:mysql-connector-java:6.0.3")
   jooqGenerator("org.postgresql:postgresql:42.2.14")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

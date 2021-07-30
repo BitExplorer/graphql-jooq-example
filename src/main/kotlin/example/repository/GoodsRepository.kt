@@ -1,6 +1,6 @@
-package me.jjeda.graphqljooqexample.repository
+package example.repository
 
-import me.jjeda.graphqljooqexample.domain.Goods
+import example.domain.Goods
 import org.jooq.DSLContext
 import org.jooq.Record
 import org.jooq.exception.NoDataFoundException

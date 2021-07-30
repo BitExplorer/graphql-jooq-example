@@ -1,7 +1,7 @@
-package me.jjeda.graphqljooqexample.service
+package example.service
 
-import me.jjeda.graphqljooqexample.domain.Goods
-import me.jjeda.graphqljooqexample.repository.GoodsRepository
+import example.domain.Goods
+import example.repository.GoodsRepository
 import org.springframework.stereotype.Service
 
 @Service

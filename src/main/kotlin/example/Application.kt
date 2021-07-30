@@ -1,11 +1,11 @@
-package me.jjeda.graphqljooqexample
+package example
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class GraphqlJooqExampleApplication
+class Application
 
 fun main(args: Array<String>) {
-    runApplication<GraphqlJooqExampleApplication>(*args)
+    runApplication<Application>(*args)
 }
