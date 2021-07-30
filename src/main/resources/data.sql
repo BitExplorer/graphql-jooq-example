@@ -1,2 +1,2 @@
-insert into goods values (1, "temp");
-insert into goods values (2, "temp2");
+insert into goods(id, name) values(1, 'temp');
+insert into goods(id, name) values(2, 'temp2');

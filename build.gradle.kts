@@ -59,7 +59,7 @@ jooq {
         logging = org.jooq.meta.jaxb.Logging.WARN
         jdbc.apply {
           driver = "org.postgresql.Driver"
-          url = "jdbc:postgresql://localhost:5432/finance_db"
+          url = "jdbc:postgresql://localhost:5432/finance_test_db"
           user = "henninb"
           password = "monday1"
         }

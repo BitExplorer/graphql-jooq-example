@@ -1,11 +1,11 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/jooq_example?serverTimezone=UTC&characterEncoding=UTF-8
-    username: root
-    password: zigzag
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/finance_test_db
+    username: henninb
+    password: monday1
   jooq:
-    sql-dialect: mysql
+    sql-dialect: postgres
 #  sql:
 #    init:
 #      enabled: true
@@ -15,9 +15,9 @@ graphql:
   tools:
     schema-location-pattern: "**/*.graphqls"
     introspection-enabled: true
-  graphql:
-    servlet:
-      mapping: /graphql
-      enabled: true
+#  graphql:
+#    servlet:
+#      mapping: /graphql
+#      enabled: true
 #      exception-handlers-enabled: true
 
